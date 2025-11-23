@@ -1,4 +1,4 @@
-package concurrency
+package request_response
 
 import (
 	"encoding/json"
