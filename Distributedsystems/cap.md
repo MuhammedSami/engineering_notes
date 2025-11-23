@@ -1,0 +1,3 @@
+Consistency
+Availability
+Partition Tolerant

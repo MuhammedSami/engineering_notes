@@ -1,0 +1,29 @@
+Write a simple web scraper that fetches the content of a list of URLs concurrently and prints the length of each page's content.
+
+
+We have a dependency mapping like this
+{
+  "a": [],
+  "b": ["a"],
+  "c": [],
+  "d": ["c", "b"],
+  "e": ["a", "d"],
+  "f": ["a", "f"],
+  "g": ["d", "h"],
+  "h": ["a", "g"],
+  "i": ["h", "a"],
+  "k": ["a", "z"]
+}
+Implement a function which for given item returns ordered list of items it depends on.
+For example:
++-------------+-------------------+
+| input       | output            |
++-------------+-------------------+
+| a           | []                |
+| b           | a                 |
+| c           | []                |
+| d           | c, a, b           |
+| e           | a, c, b, d        |
+| f           | ?                 |
+| g           | ?                 |
+| h           | ?                 |
