@@ -25,6 +25,8 @@ but think of it like a book store each time you put a new book on your shelf you
 
 and your bloom filter will do the formula of hash and turn the found positions into 1 then again and again.
 
+![Bloom Filters](./refs/bloom_filters.png)
+
 PROBLEM:
 
 Problem with this approach of using only bits is that we might get same positions turned into 1 for different items and the probability of giving false positives is too high.
@@ -35,6 +37,3 @@ and this way we know how many items got turned the position into 1.
 ISSUES:
 
 If we keep our array size big, we probably will get less false positives but the more the size the more we get memory usage.
-
-
-
